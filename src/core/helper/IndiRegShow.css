@@ -1,0 +1,207 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+	--font_text: "Roboto", sans-serif;
+}
+#individual_detail {
+	border: 2px solid black;
+	margin: 30px 0px;
+}
+.iheading_table {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	border-bottom: 2px solid black;
+	/* grid-template-columns: minmax(70px,1fr) minmax(230px,2fr) minmax(140px,1.5fr) minmax(250px,2fr) minmax(90px,1fr) minmax(100px ,1fr); */
+}
+.iheading_col {
+	background-color: Red;
+	border-right: 2px solid white;
+	padding: 15px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: var(--heading-font);
+	text-align: center;
+	color: white;
+}
+#iheading_year {
+	border: none;
+}
+
+.iplayer1 {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 2.5fr 1fr;
+}
+.iplayer {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	text-transform: uppercase;
+}
+.iplayer_col {
+	margin: 15px;
+	justify-self: center;
+	align-self: center;
+}
+
+#isearch_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 30px 0px;
+}
+.isearch_div {
+	margin: 0px 15px;
+}
+.isearch_title {
+	display: block;
+	font-size: 16px;
+	margin: 0;
+	font-family: var(--para);
+}
+.isearch_parameter {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	outline: none;
+	text-transform: uppercase;
+	padding: 6px 6px;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+#isearch_regNo {
+	margin-left: 0px;
+}
+#isearch_sport {
+	margin-right: 0px;
+}
+.isearch_parameter:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px rgb(111, 173, 253);
+}
+#isort_team {
+	display: block;
+	padding: 5px 0px;
+
+	margin: 0px 0px;
+	text-align: right;
+}
+#isearch_select {
+	width: 250px;
+	padding: 6px;
+	font-size: 17px;
+	outline: none;
+}
+#isearch_select:focus {
+	outline: none;
+	box-shadow: 0px 0px 8px rgb(111, 173, 253);
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.players_table {
+	text-align: center;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+.players_heading_row {
+	background-color: #021090;
+	border: 1px solid #021090;
+	margin: 20px 0px;
+	border-bottom: none;
+}
+.players_heading_col {
+	margin: 0px;
+	font-size: 17px;
+	border-right: 1px solid white;
+	padding: 10px;
+	color: white;
+	font-family: var(--font_text);
+}
+#player_heading_capName {
+	width: 20%;
+}
+#player_heading_branch {
+	width: 20%;
+}
+#player_heading_sportName {
+	width: 14%;
+}
+#player_heading_insName {
+	width: 22%;
+	border-right: 1px solid #021090;
+}
+#player_year {
+	border-right: 1px solid black;
+}
+.player_data {
+	padding: 10px 10px;
+	font-family: var(--font_text);
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+.player_data_row_1 {
+	text-align: center;
+	border: 1px solid black;
+}
+.player_data_row_0 {
+	text-align: center;
+	border: 1px solid black;
+	background: linear-gradient(
+		rgba(195, 233, 255, 0.349),
+		rgba(195, 233, 255, 0.349)
+	);
+}
+.icon {
+	width: 3%;
+	padding: 10px;
+}
+.icon:hover {
+	background-color: rgb(230, 230, 230);
+}
+i {
+	margin-left: 5px;
+}
+#captain {
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 850px) {
+	#isearch_section {
+		display: block;
+		margin: 30px 0px;
+	}
+	.isearch_div{
+		margin: 10px 15px;
+	}
+	#isearch_regNo {
+		margin-left: 15px;
+	}
+	#isearch_sport {
+		margin-right: 15px;
+	}
+	#search_sport {
+		margin-right: 15px;
+	}
+	.isearch_title {
+		display: block;
+		font-size: 16px;
+		font-family: var(--font_text);
+		margin: 0px;
+	}
+	.isearch_parameter {
+		display: block;
+		width: 100%;
+		font-size: 14px;
+		outline: none;
+		text-transform: uppercase;
+		padding: 6px 6px;
+		border: 1px solid black;
+		border-radius: 6px;
+	}
+}

@@ -1,0 +1,430 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+}
+#management_heading {
+	display: block;
+	border: 1px solid black;
+}
+.title_heading {
+	display: inline-block;
+	padding: 0px 20px;
+	font-size: 20px;
+	font-family: var(--nav-links);
+}
+.management_badge {
+	display: inline;
+	padding: 10px 15px;
+	margin-left: 10px;
+	border: 1px solid black;
+	font-size: 18px;
+	font-family: var(--page-heading-font);
+	border-radius: 4px;
+	box-shadow: 0px 0px 3px rgb(163, 163, 163);
+}
+#admin {
+	background-color: rgb(121, 253, 176);
+}
+#coordinator {
+	background-color: rgb(250, 255, 181);
+}
+.adteam_details {
+	border: 2px solid black;
+	margin: 10px;
+}
+.adheading_table {
+	display: grid;
+	grid-template-columns: 0.7fr 1fr 1.5fr 2.5fr 1.5fr 1fr 1fr;
+	background-color: Red;
+	border: 2px solid black;
+	margin: 0px 10px;
+	/* grid-template-columns: minmax(70px,1fr) minmax(230px,2fr) minmax(140px,1.5fr) minmax(250px,2fr) minmax(90px,1fr) minmax(100px ,1fr); */
+}
+.adheading_col {
+	background-color: Red;
+	border-right: 2px solid white;
+	padding: 15px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: var(--heading-font);
+	text-align: center;
+	color: white;
+}
+#adheading_flag {
+	border: none;
+}
+.adcaptain {
+	display: grid;
+	grid-template-columns: 0.7fr 1fr 1.5fr 2.5fr 1.5fr 1fr 1fr;
+	margin: 0px;
+}
+.adcaptain_col {
+	letter-spacing: 2px;
+	text-align: center;
+	align-self: center;
+	text-transform: uppercase;
+	font-family: var(--hint);
+	margin: 0px;
+	padding-top: 10px;
+}
+#adcaptain_flag {
+	border: none;
+}
+#adplayer_flag {
+	padding: 10px;
+	margin: 10px 10px;
+	outline: none;
+	border: 1px solid black;
+	background-color: rgb(245, 245, 122);
+}
+
+#adplayer_flag:focus {
+	box-shadow: 0px 0px 7px rgb(240, 240, 113);
+	background-color: rgb(245, 215, 80);
+}
+#adplayer_flag:hover {
+	animation-name: warning_button;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	box-shadow: 0px 0px 7px rgb(240, 240, 113);
+}
+@keyframes warning_button {
+	0% {
+		background-color: rgb(245, 245, 122);
+	}
+	50% {
+		background-color: rgb(245, 218, 97);
+	}
+	100% {
+		background-color: rgb(245, 215, 80);
+	}
+}
+#adteam_table {
+	margin: 0px 30px;
+	border: 2px solid black;
+}
+.adheading_team {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	border: 2px solid black;
+	border-left: none;
+	border-right: none;
+}
+.adplayer {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	background-color: blanchedalmond;
+}
+.adplayer_col {
+	padding: 15px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: 2px;
+	font-family: var(--hint);
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.adheading_team_col {
+	padding: 15px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: rgb(253, 62, 62);
+	text-align: center;
+	font-family: var(--heading-font);
+	color: white;
+	font-weight: 600;
+	font-size: 19px;
+}
+#adteams {
+	display: block;
+	margin: 10px 40px;
+	margin-bottom: 0px;
+}
+#adteam_heading {
+	text-align: center;
+	font-size: 24px;
+	font-family: var(--hint);
+	margin: 10px 0px;
+}
+#adheading_team_year {
+	border: none;
+}
+.adshowTeam_button {
+	border-radius: 5px;
+}
+
+#adupdate_status_section {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px 0px;
+}
+.adupdate_button {
+	display: block;
+	padding: 5px 20px;
+	border-radius: 5px;
+	outline: none;
+	width: 40%;
+	border: 1px solid black;
+}
+#adaccept_reg {
+	background-color: rgb(148, 238, 175);
+	font-size: 20px;
+}
+#adaccept_reg:focus {
+	box-shadow: 2px 2px 4px rgb(129, 236, 161);
+
+	color: white;
+	background-color: rgb(29, 192, 78);
+}
+#adaccept_reg:hover {
+	animation-name: accept_reg;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	box-shadow: 2px 2px 4px rgb(129, 236, 161);
+}
+@keyframes accept_reg {
+	0% {
+		background-color: rgb(107, 230, 144);
+	}
+	50% {
+		background-color: rgb(69, 207, 111);
+	}
+	100% {
+		color: white;
+		background-color: rgb(29, 192, 78);
+	}
+}
+#adreject_reg {
+	background-color: rgb(255, 169, 169);
+	font-size: 20px;
+}
+#adreject_reg:focus {
+	box-shadow: 2px 2px 4px rgb(255, 169, 169);
+	background-color: rgb(214, 66, 66);
+	color: white;
+}
+#adreject_reg:hover {
+	animation-name: reject_reg;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	box-shadow: 2px 2px 4px rgb(255, 169, 169);
+}
+@keyframes reject_reg {
+	0% {
+		background-color: rgb(240, 120, 120);
+	}
+	50% {
+		background-color: rgb(226, 96, 96);
+	}
+	100% {
+		color: white;
+		background-color: rgb(214, 66, 66);
+	}
+}
+
+#admin_tab {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(86, 87, 90);
+}
+.admin_tab_btn:hover {
+	background-color: red;
+	outline: none;
+	transition: 0.2s ease-out;
+}
+.admin_tab_focused_btn:focus {
+	outline: none;
+}
+.admin_tab_focused_btn {
+	border: none;
+	background-color: rgb(75, 76, 78);
+	font-size: 20px;
+	color: white;
+	letter-spacing: 1px;
+	padding: 20px;
+	justify-self: center;
+	margin-top: 10px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: red;
+}
+.admin_tab_btn {
+	outline: none;
+	border: none;
+	border-bottom: none;
+	background-color: rgb(75, 76, 78);
+	font-size: 20px;
+	color: white;
+	letter-spacing: 1px;
+	padding: 20px;
+	justify-self: center;
+	margin-top: 10px;
+	border-radius: 10px 10px 0px 0px;
+}
+.admin_section {
+	display: block;
+	margin: 0px auto;
+}
+#reg_tab {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: rgb(186, 235, 255);
+}
+#coor_tab {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(186, 235, 255);
+}
+.reg_tab_btn,
+.coor_tab_btn {
+	justify-self: center;
+	border-radius: 50px;
+	outline: none;
+	font-size: 15px;
+	border: 1px solid rgb(73, 50, 223);
+	margin: 10px 0px;
+	background-color: white;
+	letter-spacing: 1px;
+}
+.reg_tab_btn:hover,
+.coor_tab_btn:hover {
+	outline: none;
+	background-color: rgb(73, 50, 223);
+	color: white;
+	transition: 0.3s ease-out;
+}
+.reg_tab_btn:focus,
+.coor_tab_btn:focus{
+	outline: none;
+} 
+
+.reg_section,
+.coor_section {
+	display: block;
+	margin: 0px auto;
+	padding: 10px 20px;
+}
+
+.reg_tab_focused_btn,
+.coor_tab_focused_btn {
+	justify-self: center;
+	border-radius: 50px;
+	outline: none;
+	font-size: 15px;
+	border: 1px solid rgb(73, 50, 223);
+	margin: 10px 0px;
+	background-color: rgb(73, 50, 223);
+	color: white;
+	letter-spacing: 1px;
+}
+
+.coor_tab_focused_btn:focus,
+.reg_tab_focused_btn:focus {
+	outline: none;
+}
+#reg_mode_tab {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(255, 233, 204);
+}
+.reg_mode_btn {
+	color: rgb(255, 84, 31);
+	border: 1px solid rgb(255, 84, 31);
+	justify-self: center;
+	border-radius: 50px;
+	outline: none;
+	font-size: 15px;
+	margin: 10px 0px;
+	background-color: white;
+	letter-spacing: 1px;
+}
+.reg_mode_section {
+	display: block;
+	margin: 0px auto;
+	padding: 10px 20px;
+}
+.reg_mode_btn:hover {
+	background-color: rgb(255, 84, 31);
+	outline: none;
+	color: white;
+	transition: 0.3s ease-out;
+}
+.reg_mode_btn:focus{
+	outline:none
+}
+
+.reg_mode_btn_focused {
+	justify-self: center;
+	border-radius: 50px;
+	outline: none;
+	font-size: 15px;
+	border: 1px solid rgb(255, 84, 31);
+	margin: 10px 0px;
+	background-color: rgb(255, 84, 31);
+	color: white;
+	letter-spacing: 1px;
+}
+.reg_mode_btn_focused:focus {
+	outline: none;
+}
+#adindividual {
+	margin: 10px 40px;
+}
+.adIndividual_detail {
+	border: 2px solid black;
+	margin: 10px;
+}
+.adiheading_table {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	background-color: Red;
+	border: 2px solid black;
+	margin: 0px 10px;
+}
+.adiheading_col {
+	background-color: Red;
+	border-right: 2px solid white;
+	padding: 15px 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: var(--heading-font);
+	text-align: center;
+	color: white;
+}
+#adiheading_year {
+	border: none;
+}
+
+.adiplayer {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 2.5fr 1fr;
+	/* grid-template-columns: minmax(70px,1fr) minmax(230px,2fr) minmax(140px,1.5fr) minmax(250px,2fr) minmax(90px,1fr) minmax(100px ,1fr); */
+	text-transform: uppercase;
+}
+.adiplayer_col {
+	margin: 15px;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+}
+.emptyArray_notify {
+	text-align: center;
+	margin: 10px 40px;
+	font-size: 24px;
+	color: rgb(78, 78, 78);
+}
+.adteam_details_selected {
+	background-color: rgb(255, 241, 255);
+	border: 2px solid black;
+	margin: 10px;
+}

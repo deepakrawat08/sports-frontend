@@ -1,0 +1,199 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+}
+#acoordinator {
+	display: grid;
+	margin: 10px 40px;
+}
+#find_user {
+	align-self: center;
+	margin: 0px auto;
+}
+#rollNo_div {
+	margin: 10px;
+	width: 100%;
+}
+.crollno_input {
+	width: 100%;
+	padding: 8px 5px;
+	border-radius: 3px;
+	font-size: 16px;
+	text-align: center;
+	outline: none;
+	border: 1px solid black;
+}
+#rollno_input:focus {
+	box-shadow: 0px 0px 5px rgb(66, 147, 252);
+}
+#user_detail {
+	border: 1px solid black;
+	margin: 15px;
+}
+#findRoll_btn {
+	padding: 10px 30px;
+	font-size: 16px;
+	display: block;
+	border-radius: 5px;
+	margin: 0px auto;
+	border: none;
+	background-color: rgb(66, 147, 252);
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+#findRoll_btn:hover {
+	animation-name: primary-button;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+.cheading {
+	display: inline;
+	font-weight: 600;
+	margin-right: 6px;
+	letter-spacing: 1px;
+}
+.cprofile-section {
+	letter-spacing: 1px;
+	padding: 15px 10px;
+	text-align: center;
+	font-family: var(--hint);
+}
+.profile_span {
+	margin: 0px 20px;
+}
+
+@keyframes primary-button {
+	0% {
+		background-color: rgb(66, 147, 252);
+	}
+	50% {
+		background-color: rgb(40, 133, 255);
+	}
+	100% {
+		background-color: rgb(21, 123, 255);
+		box-shadow: 0px 0px 3px rgb(117, 171, 241);
+	}
+}
+#makeAdmin_div {
+	width: 100%;
+	margin: 10px 15px;
+}
+#makeAdmin_btn {
+	display: block;
+	width: 50%;
+	margin: 0px auto;
+	padding: 15px 20px;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	outline: none;
+	font-size: 18px;
+	color: white;
+	border: 1px solid black;
+	background-color: rgb(48, 167, 48);
+}
+#makeAdmin_btn:hover {
+	box-shadow: 0px 0px 5px rgb(21, 121, 21);
+	background-color: rgb(7, 134, 7);
+}
+#makeAdmin_btn:focus {
+	animation-name: success-button;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes success-button {
+	0% {
+		background-color: rgb(48, 167, 48);
+	}
+	50% {
+		background-color: rgb(27, 151, 27);
+	}
+	100% {
+		background-color: rgb(7, 134, 7);
+		box-shadow: 0px 0px 5px rgb(21, 121, 21);
+	}
+}
+#responseSuccess {
+	display: block;
+	margin: 0px auto;
+	background-color: green;
+}
+#successMessage {
+	font-size: 22px;
+	letter-spacing: 2px;
+	padding: 50px;
+	color: white;
+	text-align: center;
+}
+.select_coordinator {
+	padding: 10px 5px;
+	font-size: 16px;
+	display: block;
+	margin: 0px auto;
+	width: 40%;
+	outline: none;
+}
+.select_coordinator:focus {
+	box-shadow: 0px 0px 5px rgb(66, 147, 252);
+}
+.remove_coordinator {
+	margin: 10px 40px;
+	border: 1px solid black;
+}
+.heading_coord {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	background-color: red;
+	margin: 5px;
+}
+.coordHeading_col {
+	justify-self: center;
+	color: white;
+	font-size: 1.1em;
+	align-self: center;
+	margin: 15px 0px;
+}
+.coordcaptain_col {
+	justify-self: center;
+	align-self: center;
+	margin: 15px 0px;
+}
+.coordProfile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	border: 1px solid black;
+	margin: 5px;
+}
+.removeCoord {
+	margin: 6px 30px;
+	background-color: rgb(255, 111, 111);
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+
+.removeCoord:hover {
+	animation-name: warning;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+.removeCoord:focus{
+	outline: none;
+	background-color: rgb(255, 33, 33);
+}
+@keyframes warning {
+	0% {
+		background-color: rgb(255, 111, 111);
+	}
+	50% {
+		background-color: rgb(255, 74, 74);
+	}
+	100% {
+		background-color: rgb(255, 33, 33);
+	}
+}

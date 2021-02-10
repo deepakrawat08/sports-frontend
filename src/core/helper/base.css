@@ -1,0 +1,35 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+}
+#parent_container{
+    min-width: 420px;
+}
+.container_base{
+    display: inline-block;
+    margin: 0px;
+    margin-top: 60px;
+    padding:20px;
+    width: 100%;
+    /* border: 1px solid red; */
+    min-width: 420px;
+}
+.base_title{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: var(--para);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0px auto;
+    text-align: center;
+}
+.base_description{
+    font-size: 16px;
+    color: rgb(100, 98, 98);
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+}

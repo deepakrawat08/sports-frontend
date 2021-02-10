@@ -1,0 +1,115 @@
+:root{
+	--navColor:#03002E;
+}
+
+.nav {
+	display: block;
+	background-color: var(--navColor);
+	color: #fff;
+	margin: 0px;
+	width: 100%;
+	padding-bottom: 0px;
+	height: 60px;
+	position: fixed;
+}
+.navbar_header {
+	display: block;
+	float: left;
+	line-height: 60px;
+}
+.title {
+	font-weight: 700;
+	font-size: 22px;
+	margin-left: 20px;
+	font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.bar_icon {
+	display: none;
+}
+#nav_items {
+	display: block;
+    float: right;
+	background-color: var(--navColor);
+	line-height: 60px;
+}
+.nav_list {
+	list-style-type: none;
+	display: inline;
+	text-align: center;
+}
+.navbar_link {
+	color: #e8e8e8;
+	text-decoration: none;
+	font-family: var(--link);
+	font-weight: 400;
+	padding: 0px 10px;
+	letter-spacing: 1.5px;
+}
+
+.navbar_link:hover {
+	color: white;
+	text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+.bar_icon {
+	display: none;
+	line-height: 60px;
+	float: right;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 960px) {
+    
+    #check:checked ~ #nav_items{
+        background-color: var(--navColor);
+        right:0px
+    }
+	.bar_icon {
+		display: block;
+        float: right;
+        line-height: 60px;
+        padding-right: 30px;
+	}
+
+	#nav_items_closed {
+		transition: 0.3s ease-in;
+		background-color: #512e5f;
+		line-height: 60px;
+		margin-top: 60px;
+		height: 100vh;
+		width: 220px;
+		float: right;
+		padding: 0px;
+        right: -220px;
+		position: fixed;
+	}
+	#nav_items {
+		float: right;
+		width: 220px;
+		background-color: #512e5f;
+		line-height: 60px;
+		margin-top: 60px;
+		height: 100vh;
+		float: right;
+		right: -220px;
+		padding: 0px;
+		position: fixed;
+		transition: 0.3s ease-out;
+	}
+	.nav_list {
+		list-style-type: none;
+		display: block;
+	}
+	.navbar_link {
+		color: #d8d8d8;
+		text-decoration: none;
+		font-family: var(--link);
+		font-weight: 400;
+		font-size: 16px;
+	}
+}

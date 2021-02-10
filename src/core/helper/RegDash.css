@@ -1,0 +1,96 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+	--font_text: "Roboto", sans-serif;
+	--button:#021090;
+}
+#custom_section {
+	display: block;
+	margin: 30px 30px;
+}
+.select_gameType {
+	width: 50%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.gameType_span {
+	font-size: 22px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.teamGame_btn {
+	border-radius: 30px 0px 0px 30px;
+	width: 100%;
+	background-color: white;
+	outline: none;
+	border:2px solid var(--button);
+	color: var(--button);
+	padding: 5px 0px;
+}
+.individualGame_btn {
+	border-radius: 0px 30px 30px 0px;
+	width: 100%;
+	background-color: white;
+	outline: none;
+	border:2px solid var(--button);
+	padding: 5px 0px;
+	color: var(--button);
+}
+.teamGame_btn_selected {
+	border-radius: 30px 0px 0px 30px;
+	width: 100%;
+	background-color: var(--button);
+	color: white;
+	outline: none;
+	padding: 5px 0px;
+	border:2px solid var(--button);
+}
+.individualGame_btn_selected {
+	border-radius: 0px 30px 30px 0px;
+	width: 100%;
+	background-color: var(--button);
+	color: white;
+	outline: none;
+	padding: 5px 0px;
+	border:2px solid var(--button);
+}
+
+.teamGame_btn:focus{
+	outline:none;
+	border-right:none;
+}
+.individualGame_btn:focus{
+	outline:none;
+	border-right:none;
+}
+.teamGame_btn_selected:focus{
+	outline:none;
+	border-right:none;
+}
+.individualGame_btn_selected:focus{
+	outline:none;
+	border-right:none;
+}
+
+@media screen and (max-width: 850px) {
+	.select_gameType {
+		width: 95%;
+		margin: 0px auto;
+		margin-bottom: 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 420px) {
+	#custom_section {
+		display: block;
+		margin: 30px 0px;
+		min-width: 420px;
+	}
+}

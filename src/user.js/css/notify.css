@@ -1,0 +1,42 @@
+:root {
+	--heading-font: "Dosis", sans-serif;
+	--para: "Oxygen", sans-serif;
+	--hint: "Josefin Sans", sans-serif;
+	--page-heading-font: "Source Code Pro", monospace;
+	--nav-links: "Comfortaa", cursive;
+}
+.notify {
+	display: block;
+	padding: 10px;
+	font-family: var(--hint);
+}
+.success {
+	display: block;
+	padding: 10px 5px;
+	color: green;
+	font-size: 24px;
+	height:10%;
+	text-align: center;
+}
+.error {
+	display: block;
+	padding: 10px 5px;
+	text-align: center;
+	color: red;
+	font-size: 24px;
+	text-align: center;
+}
+.loading {
+	display: block;
+	text-align: center;
+	padding: 10px 5px;
+	color: gray;
+	font-size: 24px;
+}
+.warning {
+	display: block;
+	padding: 10px 5px;
+	color: rgb(255, 187, 0);
+	text-align: center;
+	font-size: 24px;
+}
