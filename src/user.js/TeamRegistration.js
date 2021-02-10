@@ -599,6 +599,7 @@ const TeamRegistration = ({
 						</div>
 					</div>
 					{successResponse.teamPlayers.map((val, i) => {
+						console.log(successResponse);
 						return (
 							<div
 								className="row mx-4 my-2  p-2 border border-white"
@@ -674,6 +675,7 @@ const TeamRegistration = ({
 		event.preventDefault();
 		setbuttons({ ...buttons, enableCreateTeam: true });
 		createTeam(user, teamPlayer, sport, token).then((data) => {
+			console.log(data);
 			if (!data.fetchError) {
 				if (data.error) {
 					setdbresponse({
